@@ -8,7 +8,7 @@ const navButton = (props) => {
 
     return (
         <Button variant="contained" color="primary" size = "medium" onClick = {() => props.clicked(props.dogName)}>
-            {props.dogName}
+            {props.dogName.name}
         </Button>
     )
 

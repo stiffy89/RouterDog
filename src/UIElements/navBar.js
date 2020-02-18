@@ -19,7 +19,7 @@ const navBar = (props) => {
     const dogArray = props.currentDogState;
     const dogArrayComponents = [];
 
-    dogArray.forEach(dog => dogArrayComponents.push(<NavButton dogName = {dog.name} clicked = {(dogName) => props.clicked(dogName)}/>));
+    dogArray.forEach(dog => dogArrayComponents.push(<NavButton dogName = {dog} clicked = {(dogName) => props.clicked(dogName)}/>));
     
     return (
         <AppBar position="static">
